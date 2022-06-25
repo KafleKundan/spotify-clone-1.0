@@ -4,6 +4,8 @@ export const initialState = {
     playlists: [],
     playing: false,
     item : null,
+    // Remove at production
+    token:"BQD_fNcEuAtcR5kfJ0wW-C8mGTILazbvzGPauCRDP17Y0V-uNij5EUdAe7GEfO_D4uedMw3cUcYx-UYMqMJ4L2rRIdM37bymq7pMFAFACijLiV_WJBcWNG494XVSPrOoJMZzPjGR05yMxsLb4dUly8nMPWT98OyOYm4B-s3-PVYkultOLTERcnATdMxye8wAH1S1g-9GAdtf-9Dc",
 }
 const reducer = (state, action)=>{
     console.log(action)

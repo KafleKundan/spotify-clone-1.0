@@ -44,11 +44,11 @@ function App() {
     return (
         <div className="app">
             {/* Renders the login page if token is not available */}
-            {token ? <Player /> : <Login />}
+            {token ? <Player spotify = {spotify} /> : <Login />}
         </div>
     );
 }
 
 export default App;
 
-// 2:13:38
+// 2:53:58
