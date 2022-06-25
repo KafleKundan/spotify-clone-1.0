@@ -5,8 +5,6 @@ import Login from "./components/Login";
 import { getTokenFromUrl } from "./spotify";
 import Player from "./components/Player";
 
-
-
 const spotify = new SpotifyWebApi();
 
 function App() {
@@ -23,14 +21,16 @@ function App() {
             // Accessing the token to get Data
             spotify.setAccessToken(_token);
             // Getting user information
-            spotify.getMe().then(user=>{
-            console.log(":person: ", user)
-            })
-
+            spotify.getMe().then((user) => {
+                console.log(":person: ", user);
+            });
         }
     }, []);
     return (
-        <div className="app">{token ? <Player/> : <Login />}</div>
+        <div className="app">
+            {/* Renders the login page if token is not available */}
+            {token ? <Player /> : <Login />}
+        </div>
     );
 }
 
