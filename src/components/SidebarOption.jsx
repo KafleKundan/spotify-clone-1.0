@@ -4,11 +4,16 @@ import "../styles/SidebarOption.css"
 const SidebarOption = ({title, Icon}) => {
   return (
     <div className="sidebarOption">
-        {/* Would only render if Icon is available */}
+        {/* Would only render if Icon is available
         {Icon && <Icon className="sidebarOption__icon"/>}
 
         {/* If Icon then Header else a p tag */}
-        {Icon?(<h4>{title}</h4>): <p>{title}</p>}
+        {/* {Icon?(<h4>{title}</h4>): <p>{title}</p>} */} 
+
+        {Icon? (<div className='sidebarOptionIfIcon'>
+          {Icon && <Icon className="sidebarOption__icon"/>}
+          <h4>{title}</h4>
+          </div>): <p>{title}</p>}
 
     </div>
   )

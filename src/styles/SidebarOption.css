@@ -1,6 +1,6 @@
 .sidebarOption{
     color: grey;
-    height: 40px;
+
     cursor: pointer;
     transition: 200ms color ease-in;
     display: flex;
@@ -10,6 +10,19 @@
     color: white;
 }
 
+.sidebarOptionIfIcon{
+    display: flex;
+    align-items: center;
+    height: 40px;
+}
+
 .sidebarOption__icon{
     margin: 0 10px;
+}
+
+.sidebarOption > p{
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 14px;
+
 }

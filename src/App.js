@@ -12,7 +12,7 @@ function App() {
     // const [token, setToken] = useState(null)
     // Rather than keeping the token here we dispatch it to the DataLayer
 
-    const [{user,token}, dispatch] = useDataLayerValue();
+    const [{token}, dispatch] = useDataLayerValue();
 
     useEffect(() => {
         const hash = getTokenFromUrl();
@@ -36,9 +36,19 @@ function App() {
                     user: _user,
                 });
             });
+
+            spotify.getUserPlaylists().then((_playlists)=>{
+                dispatch({
+                    type: "SET_PLAYLISTS",
+                    playlists: _playlists,
+                })
+
+            })
+
+            
+
         }
-        console.log(user)
-    },[]);
+    },[token,dispatch]);
 
 
     return (
@@ -51,4 +61,5 @@ function App() {
 
 export default App;
 
-// 2:53:58
+// 03:02:00
+
