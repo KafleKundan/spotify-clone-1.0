@@ -1,15 +1,16 @@
 import React from "react";
 import "../styles/Footer.css";
 import {
-    PlayCircleOutline,
+    PlayCircle,
     SkipPrevious,
     SkipNext,
     Shuffle,
-    Repeat,
     PlaylistPlay,
     VolumeDown,
+    RepeatRounded,
 } from "@mui/icons-material";
 import { Slider } from "@mui/material";
+
 
 const Footer = () => {
     return (
@@ -28,9 +29,10 @@ const Footer = () => {
             <div className="footer__center">
                 <Shuffle className="footer__green" />
                 <SkipPrevious className="footer__icon" />
-                <PlayCircleOutline fontSize="large" className="footer__icon" />
+                <PlayCircle fontSize="large" className="footer__icon" />
                 <SkipNext className="footer__icon" />
-                <Repeat className="footer__green" />
+                <RepeatRounded  className="footer__green" />
+
             </div>
             <div className="footer__right">
                 <h4>
@@ -46,3 +48,4 @@ const Footer = () => {
 };
 
 export default Footer;
+

@@ -1,16 +1,15 @@
-.footer{
-    position:fixed;
+.footer {
+    position: fixed;
     display: flex;
     justify-content: space-between;
     bottom: 0;
-    height:85px;
+    height: 85px;
     width: 100vw;
     background-color: #282828;
     padding: 20px;
 }
 
-
-.footer__left{
+.footer__left {
     flex: 0.3;
     display: flex;
     align-items: center;
@@ -18,17 +17,30 @@
     width: 300px;
 }
 
-.footer__albumLogo{
+.footer__albumLogo {
     height: 60px;
     width: 60px;
     margin-right: 20px;
     object-fit: contain;
 }
 
+.footer__green {
+    color: #1db954;
+}
+.footer__songInfo > h4 {
+    /* margin-bottom: 3px; */
+    font-size: 14px;
+}
+.footer__songInfo > p {
+    font-size: 12px;
+}
+.footer__icon:hover,
+.footer__green:hover {
+    transition: transform 0.15s ease-in-out;
+    transform: scale(1.2) !important;
+}
 
-
-
-.footer__center{
+.footer__center {
     flex: 0.4;
     padding: 0 100px;
     color: white;
@@ -37,34 +49,35 @@
     justify-content: space-between;
     max-width: 30rem;
 }
-.footer__right{
+.footer__right {
     color: white;
     flex: 0.3;
     display: flex;
     align-items: center;
     justify-content: flex-end;
 }
-.footer__right h4{
-    padding-left:10px;
+
+
+.footer__right h4 {
+    padding-left: 10px;
 }
-.footer__right_slider, .MuiSlider-root{
-    width: max(90px , 5vw) !important;
+.footer__right_slider,
+.MuiSlider-root {
+    width: max(90px, 5vw) !important;
     margin: 0 20px 0 10px;
     color: #1db954;
     height: 5px !important;
 }
-.MuiSlider-rail{
+.MuiSlider-rail {
     color: white;
 }
-.MuiSlider-track{
+.MuiSlider-track {
     color: #1db954;
-
 }
-.MuiSlider-thumb{
+.MuiSlider-thumb {
     color: white;
     box-shadow: none;
     width: 10px;
     height: 10px;
     position: relative;
 }
-
